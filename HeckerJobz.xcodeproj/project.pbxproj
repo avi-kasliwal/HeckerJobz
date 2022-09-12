@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82382A3C28CEE95600F78274 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82382A3B28CEE95600F78274 /* JobData.swift */; };
+		823F184928CF808100EDBB6E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F184828CF808100EDBB6E /* WebView.swift */; };
+		823F184B28CF80AE00EDBB6E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F184A28CF80AE00EDBB6E /* DetailView.swift */; };
 		82D267B228CE3A0800A9A941 /* HeckerJobzApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D267B128CE3A0800A9A941 /* HeckerJobzApp.swift */; };
 		82D267B428CE3A0800A9A941 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D267B328CE3A0800A9A941 /* ContentView.swift */; };
 		82D267B628CE3A0A00A9A941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D267B528CE3A0A00A9A941 /* Assets.xcassets */; };
 		82D267B928CE3A0A00A9A941 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D267B828CE3A0A00A9A941 /* Preview Assets.xcassets */; };
+		82D267C228CE525E00A9A941 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D267C128CE525E00A9A941 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82382A3B28CEE95600F78274 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
+		823F184828CF808100EDBB6E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		823F184A28CF80AE00EDBB6E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		823F184C28CF81B200EDBB6E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		82D267AE28CE3A0800A9A941 /* HeckerJobz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeckerJobz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D267B128CE3A0800A9A941 /* HeckerJobzApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeckerJobzApp.swift; sourceTree = "<group>"; };
 		82D267B328CE3A0800A9A941 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82D267B528CE3A0A00A9A941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D267B828CE3A0A00A9A941 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82D267C128CE525E00A9A941 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +44,7 @@
 		82D267A528CE3A0800A9A941 = {
 			isa = PBXGroup;
 			children = (
+				823F184C28CF81B200EDBB6E /* README.md */,
 				82D267B028CE3A0800A9A941 /* HeckerJobz */,
 				82D267AF28CE3A0800A9A941 /* Products */,
 			);
@@ -51,8 +61,9 @@
 		82D267B028CE3A0800A9A941 /* HeckerJobz */ = {
 			isa = PBXGroup;
 			children = (
+				82D267C028CE3A7300A9A941 /* Models */,
+				82D267BF28CE3A6A00A9A941 /* Views */,
 				82D267B128CE3A0800A9A941 /* HeckerJobzApp.swift */,
-				82D267B328CE3A0800A9A941 /* ContentView.swift */,
 				82D267B528CE3A0A00A9A941 /* Assets.xcassets */,
 				82D267B728CE3A0A00A9A941 /* Preview Content */,
 			);
@@ -65,6 +76,25 @@
 				82D267B828CE3A0A00A9A941 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82D267BF28CE3A6A00A9A941 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82D267B328CE3A0800A9A941 /* ContentView.swift */,
+				823F184828CF808100EDBB6E /* WebView.swift */,
+				823F184A28CF80AE00EDBB6E /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82D267C028CE3A7300A9A941 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82D267C128CE525E00A9A941 /* NetworkManager.swift */,
+				82382A3B28CEE95600F78274 /* JobData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D267C228CE525E00A9A941 /* NetworkManager.swift in Sources */,
+				823F184B28CF80AE00EDBB6E /* DetailView.swift in Sources */,
+				823F184928CF808100EDBB6E /* WebView.swift in Sources */,
+				82382A3C28CEE95600F78274 /* JobData.swift in Sources */,
 				82D267B428CE3A0800A9A941 /* ContentView.swift in Sources */,
 				82D267B228CE3A0800A9A941 /* HeckerJobzApp.swift in Sources */,
 			);
