@@ -41,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		451A04DE28CF98BC009F4368 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				82D267C128CE525E00A9A941 /* NetworkManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
 		82D267A528CE3A0800A9A941 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +69,7 @@
 		82D267B028CE3A0800A9A941 /* HeckerJobz */ = {
 			isa = PBXGroup;
 			children = (
+				451A04DE28CF98BC009F4368 /* Network Layer */,
 				82D267C028CE3A7300A9A941 /* Models */,
 				82D267BF28CE3A6A00A9A941 /* Views */,
 				82D267B128CE3A0800A9A941 /* HeckerJobzApp.swift */,
@@ -91,7 +100,6 @@
 		82D267C028CE3A7300A9A941 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				82D267C128CE525E00A9A941 /* NetworkManager.swift */,
 				82382A3B28CEE95600F78274 /* JobData.swift */,
 			);
 			path = Models;
